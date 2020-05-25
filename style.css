@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Tauri-Regular';
+    src: url(font/Tauri-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RubikMonoOne-Regular';
+    src: url(font/RubikMonoOne-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: "Tauri-Regular";
+}
+.body {
+    border: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns:100px 400px 50px 1fr 50px 1fr 100px;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-areas: 
+            ". photo . about . interest ."
+            ". photo . school . interest ."
+            ". nom . school . interest ."
+            ". info . school . interest . "
+            ". info . jobs . interest . "
+            ". info . jobs . interest . "
+            ". info . jobs . interest . "
+            ". info . jobs . interest . "
+            ". info . jobs . interest . "
+            ". info . jobs . interest . "
+
+}
+}
+.container div {
+    overflow: hidden;
+}
+.photo {
+    grid-area: photo;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+.photo>img {
+    object-fit: cover;
+    max-width: 400px;
+    max-height: 400px;
+    display: inline-block;
+    background-size: cover;
+}
+.nom {
+    grid-area: nom;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+.nom p {
+    font-size: 50px;
+    text-align: center;
+}
+.info {
+    grid-area: info;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+.email::before{
+    content: '';
+    background:url("icone/email.png");
+    background-size: cover;
+        position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-left: -25px;
+}
+.email {
+    margin-left: 45px;
+    font-size: 20px;
+}
+.tel::before{
+    content: '';
+    background:url("icone/phone.svg");
+    background-size: cover;
+        position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-left: -25px;
+}
+.tel {
+    margin-left: 45px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 100%;
+}
+.adress::before{
+    content: '';
+    background:url("/icone/map.svg");
+    background-size: cover;
+        position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-left: -25px;
+    margin-top: 20px;
+}
+.adress {
+    margin-left: 45px;
+    font-size: 20px;
+    margin-top: -20px;
+    
+}
+.github img {
+    max-height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+    margin-left: 80px;
+    opacity: 50%;
+    margin-bottom: 10px;
+    
+}
+.github {
+    display: inline;
+}
+.networks {
+    display: inline;
+}
+.linkedin img {
+    max-height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+    margin-left: 20px;
+    opacity: 50%;
+    margin-bottom: 10px;
+}
+.github img:hover {
+    opacity: 100%;
+}
+.linkedin img:hover {
+    opacity: 100%;
+}
+.linkedin {
+    display: inline;
+}
+.about {
+    grid-area: about;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+.about h1 {
+    padding-top: 10px;
+    font-size: 50px;
+    border-right: 50px;
+    border-left: 40px;
+    padding-left: 20px;
+}
+.school {
+    grid-area: school;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.school h1 {
+    font-size: 50px;
+}
+.gras {
+    font-weight: bolder;
+}
+.italic {
+    font-style: italic;
+}
+body {
+    background-color: rgb(238, 238, 238);
+}
+.jobs {
+    grid-area: jobs;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+.jobs h1 {
+    border-left: 20px;
+    padding-left: 20px;
+}
+.jobs p {
+    padding-left: 20px;
+}
+.interest {
+    grid-area: interest;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+.info2 {
+    text-align: center;
+}
+.info2 img {
+    max-width: 60px;
+}
+.interest h1 {
+    padding-top: 10px;
+    font-size: 50px;
+    border-right: 50px;
+    border-left: 40px;
+    padding-left: 20px;
+}
